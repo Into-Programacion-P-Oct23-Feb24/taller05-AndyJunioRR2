@@ -51,23 +51,30 @@ public class Ejercicio03 {
                         precio_venta);
             } else {
                 if (origen.equals("Italia") || origen.equals("italia")) {
-                impuesto = costo * 0.15;
-                precio_venta = costo + impuesto;
-                System.out.printf("El impuesto por pagar es: %.2f\n",
-                        impuesto);
-                System.out.printf("El precio de venta es: %.2f\n",
-                        precio_venta);
+                    impuesto = costo * 0.15;
+                    precio_venta = costo + impuesto;
+                    System.out.printf("El impuesto por pagar es: %.2f\n",
+                            impuesto);
+                    System.out.printf("El precio de venta es: %.2f\n",
+                            precio_venta);
                 } else {
                     if (origen.equals("Usa") || origen.equals("usa")) {
-                impuesto = costo * 0.08;
-                precio_venta = costo + impuesto;
-                System.out.printf("El impuesto por pagar es: %.2f\n",
-                        impuesto);
-                System.out.printf("El precio de venta es: %.2f\n",
-                        precio_venta);
+                        impuesto = costo * 0.08;
+                        precio_venta = costo + impuesto;
+                        System.out.printf("El impuesto por pagar es: %.2f\n",
+                                impuesto);
+                        System.out.printf("El precio de venta es: %.2f\n",
+                                precio_venta);
+                    } else {
+                        impuesto = 0;
+                        precio_venta = costo;
+                        System.out.printf("El impuesto por pagar es: %.2f\n",
+                                impuesto);
+                        System.out.printf("El precio de venta es: %.2f\n",
+                                precio_venta);
                     }
                 }
-            }    
+            }
         }
     }
 }    
